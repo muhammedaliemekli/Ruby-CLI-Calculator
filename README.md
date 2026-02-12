@@ -13,7 +13,7 @@ The program supports:
 
 Make sure you have Ruby installed, then run:
 
-ruby calculator.rb
+ruby main.rb
 
 ## Example
 
