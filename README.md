@@ -27,6 +27,7 @@ Basic logic for zero-division errors.
 
 
 How to Run---------------------------------------------------------------------------------------------------------------------------------------
+
 Ensure you have Ruby installed on your system.
 
 Clone this repository or download the main.rb file.
@@ -38,6 +39,7 @@ ruby main.rb
 
 
 Usage--------------------------------------------------------------------------------------------------------------------------------------------
+
 Upon launching, the calculator will prompt you for an operation:
 
 Operations: Use +, -, *, /, **, or % to start.
