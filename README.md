@@ -2,7 +2,8 @@ Ruby CLI Calculator 🧮
 This is a command-line interface (CLI) calculator developed in Ruby. The project has evolved from a basic four-operation tool (v1.0) into a more dynamic and persistent application (v2.0) designed for practical daily use.
 
 
-Version History
+Version History-----------------------------------------------------------------------------------------------------------------------------------------------------
+
 v2.0 (Latest Version)
 This update focuses on state management and enhanced user experience:
 
