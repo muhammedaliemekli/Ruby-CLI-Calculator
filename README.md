@@ -2,7 +2,7 @@ Ruby CLI Calculator 🧮
 This is a command-line interface (CLI) calculator developed in Ruby. The project has evolved from a basic four-operation tool (v1.0) into a more dynamic and persistent application (v2.0) designed for practical daily use.
 
 
-Version History------------------------------------------------------------------------------------------------------------------------
+Version History
 v2.0 (Latest Version)
 This update focuses on state management and enhanced user experience:
 
@@ -26,7 +26,7 @@ Program terminated after a single calculation.
 Basic logic for zero-division errors.
 
 
-How to Run-----------------------------------------------------------------------------------------------------------------------------
+How to Run
 Ensure you have Ruby installed on your system.
 
 Clone this repository or download the main.rb file.
@@ -37,7 +37,7 @@ Bash
 ruby main.rb
 
 
-Usage----------------------------------------------------------------------------------------------------------------------------------
+Usage
 Upon launching, the calculator will prompt you for an operation:
 
 Operations: Use +, -, *, /, **, or % to start.
@@ -50,7 +50,8 @@ Result (=): Displays the current session's final value and exits.
 
 Quit (q): Closes the calculator immediately.
 
-Technical Highlights---------------------------------------------------------------------------------------------------------------------
+
+Technical Highlights
 As a Computer Engineering student, I implemented the following software concepts in this project:
 
 State Management: Utilizing a hafiza variable to maintain data across loop iterations.
