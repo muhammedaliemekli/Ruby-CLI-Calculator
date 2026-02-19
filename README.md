@@ -26,7 +26,7 @@ Program terminated after a single calculation.
 Basic logic for zero-division errors.
 
 
-How to Run--------------------------------------------------------------------------------------------------------------------------------------------
+How to Run---------------------------------------------------------------------------------------------------------------------------------------
 Ensure you have Ruby installed on your system.
 
 Clone this repository or download the main.rb file.
