@@ -18,40 +18,92 @@ def carp(a, b)
     a * b
 end
 
-puts "Birinci sayıyı giriniz: "
-a = gets.chomp.to_f
+def us(a, b)
+    a ** b
+end
 
-puts "İkinci sayıyı giriniz: "
-b = gets.chomp.to_f
+def mod(a, b)
+    a % b
+end
 
-puts "Yapmak istediğiniz işlem nedir?
-1 = toplama
-2 = çıkarma
-3 = çarpma
-4 = bölme"
+hafiza = nil
 
-puts
-puts "Yapmak istediğiniz işlemi seçiniz:"
+puts "Hesap makinesi V.2.0'a hosgeldiniz"
 
-islem =gets.chomp.to_i
-
-case islem
-when 1
-    sonuc = topla(a, b)
-    puts "Sonuç: #{sonuc}"
-when 2
-    sonuc = cikar(a, b)
-    puts "Sonuç: #{sonuc}"
-when 3
-    sonuc = carp(a, b)
-    puts "Sonuç: #{sonuc}"
-when 4
-    sonuc = bol(a, b)
-    if sonuc.nil?
-        puts "Bölen kısma 0 girmeyiniz"
-    else
-        puts "Sonuç: #{sonuc}"
+while true
+    puts "\n-----------------------------------"
+    if hafiza
+        puts "Hafızadaki mevcut değer: #{hafiza}"
     end
-else
-    puts "Geçersiz işlem girdiniz."
+    
+    puts "Yapmak istediginiz islemi seciniz:"
+    puts
+    puts "toplama: +"
+    puts "cikarma: -"
+    puts "bolme: /"
+    puts "carpma: *"
+    puts "üs alma: **"
+    puts "mod alma: %"
+    puts "sonucu gormek icin: ="
+    puts "hafizayi sifirla: c"
+    puts "cikis: q"
+    puts "-----------------------------------"
+    
+    islem = gets.chomp
+
+    if islem == "="
+        if hafiza.nil?
+            puts "Henuz bir islem yapmadiniz!"
+            next
+        else
+            puts "==> Son sonuc: #{hafiza} <=="
+            break
+        end
+    end
+    
+    if islem == "q"
+        puts "Hesap makinesinden cikiliyor..."
+        break
+    elsif islem == "c"
+        hafiza = nil
+        puts "Hafiza sifirlandi! Yeni isleme baslayabilirsiniz."
+        next
+    end    
+
+    if hafiza.nil?
+        puts "Birinci sayiyi giriniz:"
+        a = gets.chomp.to_f
+    else
+        a = hafiza
+    end
+
+    puts "Ikinci sayiyi giriniz:"
+    b = gets.chomp.to_f
+
+    sonuc = nil
+
+    case islem
+    when "+"
+        sonuc = topla(a, b)
+    when "-"
+        sonuc = cikar(a, b)
+    when "*"
+        sonuc = carp(a, b)
+    when "**"
+        sonuc = us(a, b)
+    when "%"
+        sonuc = mod(a, b)
+    when "/"
+        sonuc = bol(a, b)
+        if sonuc.nil?
+            puts "Bolen kisma 0 girmeyiniz!"
+        end
+    else
+        puts "Gecersiz islem girdiniz."
+    end 
+    
+    if !sonuc.nil?
+        puts "==> Sonuc: #{sonuc} <=="
+        hafiza = sonuc
+    end
 end
